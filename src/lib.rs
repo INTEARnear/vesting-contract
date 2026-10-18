@@ -24,6 +24,7 @@ impl Contract {
     pub fn new(token: AccountId, total: U128, start: U64, end: U64, owner: AccountId) -> Self {
         assert!(total.0 > 0, "total must be greater than 0");
         assert!(end > start, "end must be greater than start");
+        assert!(end.0 > env::block_timestamp());
 
         Self {
             token,

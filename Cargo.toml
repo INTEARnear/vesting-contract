@@ -5,7 +5,7 @@ version = "0.1.0"
 edition = "2024"
 resolver = "3"
 rust-version = "1.99.1"
-repository = "https://github.com/INTEARnear/vesting"
+repository = "https://github.com/INTEARnear/vesting-contract"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
